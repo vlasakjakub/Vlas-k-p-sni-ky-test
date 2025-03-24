@@ -1,0 +1,79 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Hlava stránky s názvem */
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+}
+
+.title-bar {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Změna barvy při najetí myší */
+.title-bar:hover {
+    background-color: #45a049;
+}
+
+/* Pohyblivé logo */
+.logo-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo {
+    animation: moveLogo 3s linear infinite;
+    width: 30px;
+    height: 30px;
+}
+
+/* Animace pohybu loga */
+@keyframes moveLogo {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+/* Styl pro hlavní obsah */
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* Seznam písní */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Styl pro patičku */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
